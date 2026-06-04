@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Işıktepe Eğitim Gönüllüleri Derneği — Mentorluk, Eğitim Gönüllülüğü ve Dayanışma</title>
+    <meta name="description" content="Işıktepe Eğitim Gönüllüleri Derneği, kasabamızın öğrencilerine mentorluk, kariyer koçluğu ve eğitimde fırsat eşitliği sunmak için çalışan bir gönüllü topluluğudur.">
+    <meta name="keywords" content="Işıktepe, eğitim gönüllüleri, mentorluk, kariyer koçluğu, mezun ağı, eğitimde fırsat eşitliği, gönüllülük, dernek">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Işıktepe Eğitim Gönüllüleri Derneği">
+    <meta property="og:description" content="Işıktepe'den yükselen umutla, eğitimin gücünü her çocuğun, her gencin ve her bireyin hayatına taşıyoruz.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <!-- <meta property="og:image" content="[PLACEHOLDER: og-image.jpg]"> -->
+    <!-- <meta property="og:url" content="[PLACEHOLDER: site URL]"> -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+        <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    // Sayfa tamamen yüklendikten sonra çalışması için:
+    window.addEventListener('load', () => {
+        const lightbox = GLightbox({ 
+            selector: '.glightbox',
+            loop: true
+        });
+    });
+</script>
+
+<body>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header" id="header">
+        <div class="header__container container">
+            <a href="#hero" class="header__logo" aria-label="Ana Sayfa">
+                <img src="assets/images/logo.jpg" alt="Işıktepe Eğitim Gönüllüleri Derneği Logosu" class="header__logo-img">
+                <span class="header__logo-text">Işıktepe Eğitim Gönüllüleri</span>
+            </a>
+
+            <button class="header__hamburger" id="hamburger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="nav-menu">
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+            </button>
+
+            <nav class="header__nav" id="nav-menu" role="navigation" aria-label="Ana menü">
+                <ul class="header__nav-list">
+                    <li><a href="#hero" class="header__nav-link active">Ana Sayfa</a></li>
+                    <li><a href="#hakkimizda" class="header__nav-link">Hakkımızda</a></li>
+                    <li><a href="#etkinlikler" class="header__nav-link">Etkinlikler</a></li>
+                    <li><a href="#galeri" class="header__nav-link">Galeri</a></li>
+                    <li><a href="#blog" class="header__nav-link">Blog</a></li>
+                    <li><a href="#gonullu" class="header__nav-link header__nav-link--cta">Gönüllü Ol</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="hero" aria-label="Ana Sayfa">
+            <canvas class="hero__particles" id="hero-particles" aria-hidden="true"></canvas>
+            <div class="hero__overlay"></div>
+            <div class="hero__content container">
+                <h1 class="hero__title">Işıktepe'den Yükselen Umut</h1>
+                <p class="hero__subtitle">Eğitimin gücünü her çocuğun, her gencin ve her bireyin hayatına taşıyoruz.</p>
+                <div class="hero__actions">
+                    <a href="#gonullu" class="btn btn--primary btn--lg">Gönüllü Ol</a>
+                    <a href="#hakkimizda" class="btn btn--outline btn--lg">Bizi Tanıyın</a>
+                </div>
+            </div>
+            <div class="hero__scroll-hint" aria-hidden="true">
+                <span class="hero__scroll-text">Keşfet</span>
+                <div class="hero__scroll-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- İstatistikler Bölümü -->
+        <section id="stats" class="stats-section">
+            <div class="stat-item">
+                <h3>Gönüllü Sayımız</h3>
+                <p>45</p> <!-- Buraya istediğiniz sayıyı girebilirsiniz -->
+            </div>
+            <div class="stat-item">
+                <h3>Ulaşılan Kişi Sayısı</h3>
+                <p>1200+</p> <!-- Buraya istediğiniz sayıyı girebilirsiniz -->
+            </div>
+        </section>
+
+        <!-- ===== HAKKIMIZDA ===== -->
+        <section class="section section--alt" id="hakkimizda" aria-labelledby="hakkimizda-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Biz Kimiz?</span>
+                    <h2 class="section__title" id="hakkimizda-title">Hakkımızda</h2>
+                    <p class="section__subtitle">Işıktepe'den başlayıp Türkiye'nin farklı köşelerine yayılan, güçlü ve sürdürülebilir bir eğitim gönüllülüğü modeli.</p>
+                </div>
+
+                <!-- Vision -->
+                <div class="vision-block">
+                    <div class="vision-block__icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3 class="vision-block__title">Vizyonumuz</h3>
+                    <blockquote class="vision-block__quote">
+                        <p>Kasabamız Işıktepe'den başlayıp, Türkiye'nin farklı köşelerine yayılan, ayrıştırıcı olmayan, güçlü ve sürdürülebilir bir eğitim gönüllülüğü modeli oluşturmak; bu model aracılığıyla bölgenin genç potansiyelini en üst düzeye çıkarmış, örnek bir mentorlük ve dayanışma topluluğu olmaktır.</p>
+                        <p class="vision-block__highlight">Hayalimiz; her öğrencinin fırsat eşitliğiyle büyüdüğü, her gönüllünün ve katılımcının yardımlaşma, iyilik, birliktelik ve dayanışma ruhuna katkı sunduğu; umut dolu bir toplum yaratmak.</p>
+                    </blockquote>
+                </div>
+
+                <!-- Mission Pillars -->
+                <h3 class="section__subtitle-heading">Misyonumuz</h3>
+                <div class="pillars">
+                    <article class="pillar-card">
+                        <div class="pillar-card__icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path d="M12 14l9-5-9-5-9 5 9 5zM12 14v7"/>
+                            </svg>
+                        </div>
+                        <h4 class="pillar-card__title">Mentorluk ve Kariyer Koçluğu</h4>
+                        <p class="pillar-card__text">Üniversiteli ve mezun üyelerimizin tecrübeleriyle, öğrencilere yol göstermek, ilham sağlamak, kariyer hedeflerini netleştirmelerine yardımcı olmak ve onları hayata hazırlamak.</p>
+                    </article>
+                    <article class="pillar-card">
+                        <div class="pillar-card__icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h4 class="pillar-card__title">Sinerji ve Ağ Oluşturma</h4>
+                        <p class="pillar-card__text">Mezunlarımızı okudukları alanlara göre bir araya getirerek bilgi ve tecrübe paylaşımını teşvik etmek, mesleki dayanışmayı güçlendirmek.</p>
+                    </article>
+                    <article class="pillar-card">
+                        <div class="pillar-card__icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                        <h4 class="pillar-card__title">Birleştiricilik</h4>
+                        <p class="pillar-card__text">Farklı görüş ve yaşam tarzlarına saygı duyulan, kasaba aidiyetini temel alan, hiçbir ayrımcılığa izin vermeyen, birlikte öğrenen, birlikte gelişen kapsayıcı bir topluluk.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+  
+        <section class="section" id="etkinlikler" aria-labelledby="etkinlikler-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Takvim</span>
+                    <h2 class="section__title" id="etkinlikler-title">Etkinlikler ve Duyurular</h2>
+                    <p class="section__subtitle">Topluluğumuzun düzenlediği etkinlikler, seminerler ve buluşmalar hakkında bilgi alın.</p>
+                </div>
+
+                <div class="events-timeline" id="events-container">
+                    <!-- Events are rendered by JavaScript from data -->
+                </div>
+
+                <p class="events-note">Etkinlik takvimimiz sürekli güncellenmektedir. Yeni etkinliklerden haberdar olmak için bizi sosyal medyadan takip edin.</p>
+            </div>
+        </section>
+
+            <!-- ===== GALERİ ===== -->
+        <section class="section" id="galeri">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Galeri</h2>
+                    <p class="section__subtitle">Etkinliklerimizden kareler.</p>
+                </div>
+                
+            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 30px;">
+                <!-- Sadece ilk 30 fotoğrafı buraya koy -->
+                <a href="assets/images/galery/1.jpeg" class="glightbox">
+                    <img src="assets/images/galery/1.jpeg" alt="Etkinlik 1" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                </a>
+                <a href="assets/images/galery/2.jpeg" class="glightbox">
+                    <img src="assets/images/galery/2.jpeg" alt="Etkinlik 2" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                </a>
+            </div>
+
+            <!-- 30'dan fazla fotoğraf için -->
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="galeri-tum.html" class="btn btn--outline">Tüm Fotoğrafları Gör</a>
+            </div>
+            </div>
+        </section>
+
+        <!-- ===== BLOG ===== -->
+        <section class="section" id="blog">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Blog</h2>
+                    <p class="section__subtitle">Gönüllülük deneyimlerimiz ve eğitim üzerine notlar.</p>
+                </div>
+
+                <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px;">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GÖNÜLLÜ OL ===== -->
+        <section class="section section--alt" id="gonullu" aria-labelledby="gonullu-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Katıl</span>
+                    <h2 class="section__title" id="gonullu-title">Gönüllü Ol</h2>
+                    <p class="section__subtitle">Işıktepe Eğitim Gönüllüleri Derneği'ne katılarak eğitimde fırsat eşitliği için birlikte çalışalım.</p>
+                </div>
+
+                <div class="volunteer-grid">
+                    <article class="volunteer-card">
+                        <div class="volunteer-card__icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14v7"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                            </svg>
+                        </div>
+                        <h3 class="volunteer-card__title">Mentor Gönüllüsü</h3>
+                        <p class="volunteer-card__text">Üniversite öğrencisi veya mezun olarak öğrencilerimize rehberlik et, deneyimlerini paylaş ve geleceğe köprü ol.</p>
+                    </article>
+                    <article class="volunteer-card">
+                        <div class="volunteer-card__icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="volunteer-card__title">Etkinlik Gönüllüsü</h3>
+                        <p class="volunteer-card__text">Etkinliklerin organizasyonu ve yürütülmesinde destek ol, topluluğumuzu bir araya getirmemize yardımcı ol.</p>
+                    </article>
+                    <article class="volunteer-card">
+                        <div class="volunteer-card__icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="volunteer-card__title">Bilgi Paylaşım Gönüllüsü</h3>
+                        <p class="volunteer-card__text">Alanındaki tecrübeni seminer veya atölye çalışmalarıyla paylaş, öğrencilere yeni ufuklar aç.</p>
+                    </article>
+                </div>
+
+                <div class="section__cta">
+                    <!-- [PLACEHOLDER: Gönüllü başvuru form URL'si buraya eklenecek] -->
+                    <a href="#iletisim" class="btn btn--primary btn--lg">Gönüllü Başvuru Formu</a>
+                    <p class="section__cta-note">Başvuru formumuz yakında aktif olacaktır. Şimdilik bize iletişim bölümünden ulaşabilirsiniz.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BAĞIŞ ===== -->
+        <section class="section" id="bagis" aria-labelledby="bagis-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Destek</span>
+                    <h2 class="section__title" id="bagis-title">Bağış Yap</h2>
+                    <p class="section__subtitle">Her katkı, bir öğrencinin geleceğine yapılan yatırımdır.</p>
+                </div>
+
+                <div class="donation-block">
+                    <div class="donation-block__content">
+                        <p class="donation-block__intro">Işıktepe Eğitim Gönüllüleri Derneği'nin çalışmalarını desteklemek için bağışta bulunabilirsiniz. Bağışlarınız, mentorluk programlarımızın sürdürülmesi ve etkinliklerimizin gerçekleştirilmesi için kullanılmaktadır.</p>
+
+                        <div class="donation-block__details">
+                            <div class="donation-detail">
+                                <span class="donation-detail__label">Banka Adı</span>
+                                <span class="donation-detail__value">[PLACEHOLDER: Banka adı]</span>
+                            </div>
+                            <div class="donation-detail">
+                                <span class="donation-detail__label">Hesap Sahibi</span>
+                                <span class="donation-detail__value">[PLACEHOLDER: Hesap sahibi]</span>
+                            </div>
+                            <div class="donation-detail">
+                                <span class="donation-detail__label">IBAN</span>
+                                <span class="donation-detail__value donation-detail__value--mono">[PLACEHOLDER: TR00 0000 0000 0000 0000 0000 00]</span>
+                            </div>
+                            <div class="donation-detail">
+                                <span class="donation-detail__label">Açıklama</span>
+                                <span class="donation-detail__value">[PLACEHOLDER: Havale açıklaması]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donation-block__aside">
+                        <div class="donation-block__icon" aria-hidden="true">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                        <p class="donation-block__quote">"Işıktepe'den yükselen umutla, eğitimin gücünü her çocuğun hayatına taşımak."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== İLETİŞİM ===== -->
+        <section class="section section--alt" id="iletisim" aria-labelledby="iletisim-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Ulaşın</span>
+                    <h2 class="section__title" id="iletisim-title">İletişim</h2>
+                    <p class="section__subtitle">Sorularınız, önerileriniz veya işbirliği talepleriniz için bize ulaşın.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="contact-item__content">
+                                <h3 class="contact-item__title">Adres</h3>
+                                <p class="contact-item__text">[PLACEHOLDER: Fiziksel adres]</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div class="contact-item__content">
+                                <h3 class="contact-item__title">Telefon / WhatsApp</h3>
+                                <p class="contact-item__text">[PLACEHOLDER: Telefon numarası]</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="contact-item__content">
+                                <h3 class="contact-item__title">E-posta</h3>
+                                <p class="contact-item__text">[PLACEHOLDER: E-posta adresi]</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h3 class="contact-social__title">Sosyal Medya</h3>
+                        <div class="contact-social__links">
+                            <!-- [PLACEHOLDER: Instagram URL] -->
+                            <a href="https://www.instagram.com/isiktepeegitimgonulluleri/" class="social-link" aria-label="Instagram" target="" rel="noopener noreferrer">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                <span>Instagram</span>
+                            </a>
+                            <!-- [PLACEHOLDER: Facebook URL] -->
+                            <a href="https://www.facebook.com/isiktepeegitimgonulluleri" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FLOATING CTA ===== -->
+    <!-- [PLACEHOLDER: href will link to form URL when available] -->
+    <a href="#gonullu" class="floating-cta" id="floating-cta" aria-label="Gönüllü Ol">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <span>Gönüllü Ol</span>
+    </a>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="assets/images/logo.jpg" alt="Işıktepe Eğitim Gönüllüleri Derneği Logosu" class="footer__logo-img">
+                        <span class="footer__logo-text">Işıktepe Eğitim Gönüllüleri Derneği</span>
+                    </div>
+                    <p class="footer__description">Işıktepe'den yükselen umutla, eğitimin gücünü her bireyin hayatına taşıyoruz.</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Hızlı Bağlantılar</h4>
+                    <ul class="footer__link-list">
+                        <li><a href="#hakkimizda">Hakkımızda</a></li>
+                        <li><a href="#mentorluk">Mentorluk</a></li>
+                        <li><a href="#ag">Mezun Ağı</a></li>
+                        <li><a href="#etkinlikler">Etkinlikler</a></li>
+                        <li><a href="#gonullu">Gönüllü Ol</a></li>
+                        <li><a href="#bagis">Bağış Yap</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__heading">İletişim</h4>
+                    <ul class="footer__link-list">
+                        <li>[PLACEHOLDER: E-posta]</li>
+                        <li>[PLACEHOLDER: Telefon]</li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Işıktepe Eğitim Gönüllüleri Derneği. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/blog-data.js"></script> 
+    <script src="js/main.js"></script>
+</body>
+</html>

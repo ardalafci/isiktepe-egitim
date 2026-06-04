@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detayı | Işıktepe Eğitim Gönüllüleri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .blog-post-content { max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.8; }
+        .back-btn { margin-top: 30px; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <div class="container blog-post-content">
+        <h1 id="blog-title" style="margin-bottom: 20px;">Yükleniyor...</h1>
+        <hr style="margin: 20px 0;">
+        <div id="blog-body" style="font-size: 1.1rem; color: #444;"></div>
+        
+        <a href="index.html#blog" class="btn btn--primary back-btn">← Geri Dön</a>
+    </div>
+
+    <script src="js/blog-data.js"></script>
+    <script>
+        // URL'den ID'yi al
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        
+        // Veriyi bul
+        const post = BLOG_DATA[id];
+
+        // Sayfayı güncelle
+        if (post) {
+            document.getElementById('blog-title').innerText = post.title;
+            // Buraya içerik olarak istersen daha uzun bir metin alanı ekleyebilirsin
+            document.getElementById('blog-body').innerHTML = `<p>${post.summary}</p><p>Detaylı içerik buraya gelecek...</p>`;
+        } else {
+            document.getElementById('blog-title').innerText = "Yazı bulunamadı!";
+        }
+    </script>
+</body>
+</html>
