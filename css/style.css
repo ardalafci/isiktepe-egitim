@@ -81,7 +81,7 @@
     --transition-slow: 400ms ease;
 
     /* Layout */
-    --header-height: 80px;
+    --header-height: 72px;
     --header-height-scrolled: 56px;
     --container-max: 1200px;
     --container-padding: 1.5rem;
@@ -203,8 +203,8 @@ button {
 }
 
 .header__logo-img {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
     border-radius: var(--radius-full);
     flex-shrink: 0;
@@ -369,15 +369,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('../assets/images/arkaplan.png');
-    /* Fotoğrafı tam sığdırmak için: */
-background-size: 110%; /* %100'den biraz büyük, %10 zoom demek */
-    
-    /* Fotoğrafın odak noktasını biraz yukarı/aşağı kaydırarak en güzel yeri yakala */
-    background-position: center center; 
-    
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, #0ABAB5 0%, #089B97 25%, #7B2D5F 75%, #5E1F47 100%);
+    background-size: 300% 300%;
     animation: heroGradient 12s ease infinite;
     overflow: hidden;
 }
