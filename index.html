@@ -187,16 +187,29 @@
                     <p class="section__subtitle">Etkinliklerimizden kareler.</p>
                 </div>
                 
-            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 30px;">
-                <!-- Sadece ilk 30 fotoğrafı buraya koy -->
-                <a href="assets/images/galery/1.jpeg" class="glightbox">
-                    <img src="assets/images/galery/1.jpeg" alt="Etkinlik 1" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-                </a>
-                <a href="assets/images/galery/2.jpeg" class="glightbox">
-                    <img src="assets/images/galery/2.jpeg" alt="Etkinlik 2" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-                </a>
-            </div>
+        <div class="gallery-grid" id="gallery-container" style="display: grid; grid-template-columns: repeat(auto-fill, 100px); justify-content: center; gap: 15px; margin-top: 30px;">
+            <!-- Fotoğraflar buraya JavaScript ile gelecek -->
+        </div>
 
+        <script>
+            const galleryContainer = document.getElementById('gallery-container');
+            const totalPhotos = 20; 
+
+            for (let i = 1; i <= totalPhotos; i++) {
+                const imgPath = `assets/images/galery/${i}.jpeg`; 
+                
+                const link = document.createElement('a');
+                link.href = imgPath;
+                link.className = 'glightbox';
+                
+                // Kare görünüm için width ve height değerlerini 100px yaptık
+                link.innerHTML = `
+                    <img src="${imgPath}" alt="Etkinlik ${i}" style="width: 100px; height: 100px; object-fit: cover; border-radius: 8px; display: block;">
+                `;
+                
+                galleryContainer.appendChild(link);
+            }
+        </script>
             <!-- 30'dan fazla fotoğraf için -->
             <div style="text-align: center; margin-top: 20px;">
                 <a href="galeri-tum.html" class="btn btn--outline">Tüm Fotoğrafları Gör</a>
