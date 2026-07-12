@@ -73,6 +73,18 @@
     </header>
 
     <main>
+        <!-- ===== GENEL KURUL DUYURU ŞERİDİ ===== -->
+        <a href="etkinlik-detay.html?id=0" class="announcement-bar" aria-label="1. Olağan Genel Kurul İlanı - Detaylar için tıklayın">
+            <div class="announcement-bar__inner container">
+                <span class="announcement-bar__badge">Duyuru</span>
+                <p class="announcement-bar__text">
+                    <strong>1. Olağan Genel Kurul İlanı</strong>
+                    <span class="announcement-bar__date">02.08.2026, Saat 12:00 — Dernek Binası</span>
+                </p>
+                <span class="announcement-bar__cta">Detayları Gör →</span>
+            </div>
+        </a>
+
         <!-- ===== HERO SECTION ===== -->
         <section class="hero" id="hero" aria-label="Ana Sayfa">
             <canvas class="hero__particles" id="hero-particles" aria-hidden="true"></canvas>
@@ -192,10 +204,14 @@
 
         <script>
             const galleryContainer = document.getElementById('gallery-container');
-            const totalPhotos = 24; 
+            const totalPhotos = 24;
+
+            // Fotoğrafları güncelleyip FTP ile yeniden yüklediğinizde tarayıcı
+            // eski görselleri önbellekten göstermesin diye bu numarayı artırın (v1 -> v2 -> v3 ...)
+            const GALLERY_VERSION = 'v1';
 
             for (let i = 1; i <= totalPhotos; i++) {
-                const imgPath = `assets/images/galery/${i}.jpeg`; 
+                const imgPath = `assets/images/galery/${i}.jpeg?${GALLERY_VERSION}`;
                 
                 const link = document.createElement('a');
                 link.href = imgPath;
@@ -340,7 +356,7 @@
             <div class="footer__grid">
                 <div class="footer__brand">
                     <div class="footer__logo">
-                         <img src="assets/images/logo.jpg?v=1” alt="Işıktepe Eğitim Gönüllüleri Derneği Logosu" class="footer__logo-img">
+                         <img src="assets/images/logo.jpg?v=1" alt="Işıktepe Eğitim Gönüllüleri Derneği Logosu" class="footer__logo-img">
                         <span class="footer__logo-text">Işıktepe Eğitim Gönüllüleri Derneği</span>
                     </div>
                     <p class="footer__description">Işıktepe'den yükselen umutla, eğitimin gücünü her bireyin hayatına taşıyoruz.</p>
