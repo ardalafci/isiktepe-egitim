@@ -1553,3 +1553,42 @@ button {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Blog ve Etkinlik grid yapısı */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.event-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.event-card {
+    display: flex;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.event-card__date {
+    background: var(--color-primary);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+    min-width: 60px;
+    text-align: center;
+    font-weight: bold;
+}

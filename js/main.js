@@ -26,20 +26,17 @@
      * Each event: { day, month, year, title, description, status: 'upcoming' | 'past' }
      */
     const EVENTS_DATA = [
+        // EVENTS_DATA içinde ilgili etkinliği güncelle
         {
-            day: '—',
-            month: '—',
+            day: '02',
+            month: '08',
             year: 2026,
-            title: 'Mentorluk Programı Tanıtım Toplantısı',
-            description: 'Mentorluk programımızın kapsamı, hedefleri ve katılım koşulları hakkında bilgilendirme toplantısı.',
-            status: 'upcoming'
-        },
-        {
-            day: '—',
-            month: '—',
-            year: 2026,
-            title: 'Kariyer Günleri',
-            description: 'Farklı meslek gruplarından mezunlarımızın deneyimlerini paylaştığı kariyer yönlendirme etkinliği.',
+            title: '1. Olağan Genel Kurul İlanı',
+            description: `Işıktepe Eğitim Gönüllüleri Derneği Yönetim Kurulu tarafından 1. Olağan Genel Kurul Toplantısı’na tüm üyelerimiz davetlidir.
+            
+            1. Toplantı Tarihi: 02/08/2026, Saat: 12:00
+            Yer: Dernek Binası`,
+            pdfLink: 'assets/pdf/1.pdf', // PDF'in yolu
             status: 'upcoming'
         },
         {
