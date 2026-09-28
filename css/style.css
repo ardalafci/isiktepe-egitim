@@ -301,9 +301,21 @@ button {
 /* ============================================================
    ANNOUNCEMENT BAR
    ============================================================ */
+.top-banner {
+    margin-top: var(--header-height);
+    height: clamp(56px, 5.65vw, 80px);
+    overflow: hidden;
+}
+
+.top-banner__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+}
+
 .announcement-bar {
     display: block;
-    margin-top: var(--header-height);
     background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
     text-decoration: none;
     position: relative;
@@ -1378,6 +1390,10 @@ button {
         --font-size-xl: 1.25rem;
         --space-section: 3.5rem;
         --container-padding: 1.25rem;
+    }
+
+    .top-banner__image {
+        object-fit: cover;
     }
 
     /* Mobile Navigation */
